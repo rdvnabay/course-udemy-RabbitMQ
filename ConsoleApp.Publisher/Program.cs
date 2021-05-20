@@ -16,7 +16,7 @@ namespace ConsoleApp.Publisher
             string message = "Hello World";
             var messageBody = Encoding.UTF8.GetBytes(message);
             channel.BasicPublish(string.Empty,"hello-queue",null,messageBody);
-            Console.WriteLine("Mesaj gönderilmiştir");
+            Console.WriteLine("Mesaj gönderilmiştir.");
             Console.ReadLine();
         }
     }
